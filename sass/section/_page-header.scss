@@ -41,7 +41,11 @@
 
 .main-nav__list {
     display: flex;
-}
+
+        @media screen and (max-width: 767px) {
+                display: none;
+            }
+ }
 
 .main-nav__item+.main-nav__item {
     margin-left: 50px;
@@ -94,7 +98,11 @@
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-}
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
 
 .page-header__item {
     display: flex;
