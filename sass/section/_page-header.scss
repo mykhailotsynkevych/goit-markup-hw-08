@@ -1,0 +1,132 @@
+/* PAGE-HEADER */
+.page-header--underline {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header__positioning {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .main-logo-link {
+    margin-right: 93px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-logo-link {
+    color: var(--accent-color);
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1199px) {
+        line-height: 1.16;
+     }
+}
+
+.main-logo-link--black {
+    color: black;
+}
+
+.main-logo-link--white {
+    color: var(--primary-white-color);
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__item+.main-nav__item {
+    margin-left: 50px;
+}
+
+.main-nav__link {
+    display: block;
+
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+
+
+.main-nav__link--current-page {
+    color: var(--accent-color);
+
+    &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+}
+
+
+
+.page-header__contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.page-header__item {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__item+.page-header__item {
+    margin-left: 50px;
+}
+
+.page-header__link {
+    display: flex;
+    align-items: center;
+
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+    }
+}
+
+
+
+.page-header__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
