@@ -2,15 +2,39 @@
 
 .potrtfolio {
     padding-top: 94px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+    
+        }
 }
 
 .filtr__list {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: -15px;
+    flex-wrap: wrap;
+    justify-content: start;
+    }
 }
 
 .filtr__item+.filtr__item {
     margin-left: 8px;
+
+            @media screen and (max-width: 767px) {
+            margin-left: 0px;
+                }
+}
+
+.filtr__item {
+        @media screen and (max-width: 767px) {
+         margin-bottom: 15px;   
+        &:not(:last-child) {
+        margin-right: 8px;            
+            }
+            }
 }
 
 .filtr__button {
@@ -41,19 +65,61 @@
 
 .filtr__list + .projects__list {
     margin-top: 50px;
+
+    @media screen and (max-width: 767px) {
+    margin-top: 40px;
+    }
 }
 
 .projects__list {
+    
+    @media screen and (max-width: 767px) {
+    display: block;
+    margin:0px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
 }
 
 .projects__item {
+
+    @media screen and (max-width: 767px) {
+    min-width: 450px;
+    margin: 0px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
     margin: 15px;
     width: 370px;
     box-sizing: border-box;
+    }
+}
+
+.project__piture {
+    @media screen and (max-width: 767px) {
+        
+        width: 450px;
+        
+        }
 }
 
 .project__link {
@@ -116,4 +182,8 @@
 
     color: var(--primary-white-color);
     background: rgba(33, 150, 243, 0.9);
+
+     @media screen and (max-width: 767px) {
+    padding: 77px 24px;           
+    }
 }

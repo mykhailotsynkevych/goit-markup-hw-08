@@ -10,6 +10,11 @@
 
 .page-header .main-logo-link {
     margin-right: 93px;
+
+    @media screen and (max-width: 1199px) {
+        margin-right: 88px;
+        }
+
 }
 
 .main-nav {
@@ -102,7 +107,13 @@
     @media screen and (max-width: 767px) {
             display: none;
         }
+    
+    @media screen and (max-width: 1199px) {
+    flex-direction: column;
+
     }
+    
+}
 
 .page-header__item {
     display: flex;
@@ -111,6 +122,11 @@
 
 .page-header__item+.page-header__item {
     margin-left: 50px;
+
+     @media screen and (max-width: 1199px) {
+     margin-left: 0px;
+     margin-top: 10px;
+     }
 }
 
 .page-header__link {

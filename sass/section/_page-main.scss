@@ -19,6 +19,12 @@
     url(../images/hero-foto.jpg);
   background-position: center;
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+      min-width: 480px;
+      padding-top: 118px;
+      padding-bottom: 118px;
+    }
 }
 
 .hero-section__title {
@@ -95,15 +101,34 @@
     @media screen and (max-width: 767px) {
     display: block;
       }
+
+    @media screen and (max-width: 1199px) {
+    
+     flex-wrap: wrap;
+     margin: -15px;
+      
+     
+
+    }
 }
 
 .features__item {
-  width: 270px;
 
   @media screen and (max-width: 767px) {
-      width: 450px;
+    width: 450px;
+    margin-left: 15px;
       
     }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 0px;
+  }
 }
 
 .features__icon {
@@ -158,9 +183,17 @@
   margin-left: 30px;
 
     @media screen and (max-width: 767px) {
-        margin-left: 0;
+        margin-left: 0px;
         margin-top: 30px;
       }
+
+    @media screen and (max-width: 1199px) {
+      margin-left: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
 }
 
 .features__description {
@@ -239,6 +272,7 @@
   padding-top: 94px;
 
     @media screen and (max-width: 1199px) {
+      min-width: 480px;
       padding-top: 60px;
       }
 }
@@ -257,6 +291,11 @@
   @media screen and (max-width: 767px) {
     display: block;
     }
+
+  @media screen and (max-width: 1199px) {
+  flex-wrap: wrap;
+  margin: -15px;
+  }
 }
 
 .our-team__worker {
@@ -266,11 +305,18 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (max-width: 767px) {
+    min-width: 450px;
     &:not(:last-child) {
         margin-bottom: 30px;
       }
     }
-}
+
+  @media screen and (max-width: 1199px) {
+    margin: 15px;
+    width: 354px;
+    }
+  }
+
 
 .our-team__worker+.our-team__worker {
   margin-left: 30px;
@@ -278,13 +324,31 @@
     @media screen and (max-width: 767px) {
       margin-left: 0px;
       }
+
+    @media screen and (max-width: 1199px) {
+      margin-left: 15px;
+    }
 }
 
 .worker__foto {
-      @media screen and (max-width: 767px) {
-          width: 450px;
-          height: 460px;
+  min-width: 450px;
+  min-height: 460px;
+
+      @media screen and (min-width: 480px) {
+          min-width: 450px;
+          min-height: 460px;
         }
+
+      @media screen and (min-width: 768px) {
+        min-width: 354px;
+        min-height: 374px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        min-width: 270px;
+        min-height: 260px;
+      }
+
 }
 
 .worker__description {
@@ -292,6 +356,7 @@
   padding-bottom: 30px;
 
   @media screen and (max-width: 1199px) {
+
     padding-bottom: 24px;
     }
 
@@ -355,6 +420,7 @@
   padding-top: 94px;
 
   @media screen and (max-width: 1199px) {
+      min-width: 480px;
       padding-top: 60px;
     }
 }
@@ -370,24 +436,48 @@
 
 .regular-clients__list {
   display: flex;
-  justify-content: space-between;
+  
 
     @media screen and (max-width: 767px) {
-      flex-direction: column;
-      width: 480px;
-      // margin: 0 -15px;
+      min-width: 480px;
+      flex-wrap: wrap;
+      margin: -15px;
+      }
+
+      @media screen and (min-width: 768px) {
+        
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+
       }
 }
 
 .regular-clients__item {
     @media screen and (max-width: 767px) {
-      // width: 50%;
+    width: 210px;
+    margin: 15px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    margin: 15px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    margin: 0px;
+
   }
 }
 
 .regular-client__link {
   display: flex;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-grey);
   fill: var(--icon-grey);
@@ -408,10 +498,20 @@
       fill: var(--accent-color);
     }
 
-  @media screen and (max-width: 767px) {
-    width: 210px;
-    // margin: 0 15px;
-  }
+    @media screen and (max-width: 767px) {
+      width: 210px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+
+    }
   }
 
 .client__icon {

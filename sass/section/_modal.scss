@@ -39,6 +39,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+    }
 }
 
 
@@ -53,8 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 7px;
-    padding-top: 2px;
 
     width: 30px;
     height: 30px;
@@ -67,12 +70,28 @@
     &:focus {
     fill: var(--accent-color);
     }
+
+
+}
+
+.modal-close__icon {
+        @media screen and (max-width: 1199px) {
+
+        min-width: 11px;
+        min-height: 11px;
+
+        }
 }
 
 
 
 .modal__title {
     margin-bottom: 12px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    
+        }
 
 }
 
@@ -134,6 +153,10 @@
     &:hover+.form__icon,
     &:focus+.form__icon {
     fill: var(--accent-color);
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 370px;
     }
 }
 
@@ -225,7 +248,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: var(--text-color)
+    color: var(--text-color);
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    
 }
 
 .agreement-conditions {
