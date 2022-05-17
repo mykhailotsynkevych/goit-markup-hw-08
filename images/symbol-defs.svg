@@ -13,4 +13,10 @@
 <symbol id="icon-Vector" viewBox="0 0 16 12">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.24" d="M2.348 5.702l-0.083-0.079-1.24 1.175 4.369 4.168 9.179-8.756-1.232-1.175-7.947 7.574-3.046-2.906z"></path>
 </symbol>
+
+<symbol id="icon-burger" width="24" height="16" viewBox="0 0 24 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"><path>
+</symbol>
+
+
 </defs></svg>
