@@ -447,6 +447,12 @@ link {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section--overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-foto-x2.jpg);
+  }
+}
+
 .hero-section__title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -1496,6 +1502,10 @@ link {
     width: 370px;
     box-sizing: border-box;
   }
+}
+
+.project__piture {
+  display: block;
 }
 
 .project__link {
