@@ -343,19 +343,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .worker__foto {
-  // min-width: 450px;
-  // min-height: 460px;
-
-  //     @media screen and (min-width: 480px) {
-  //         min-width: 450px;
-  //         min-height: 460px;
-  //       }
-
-  //     @media screen and (min-width: 768px) {
-  //       min-width: 354px;
-  //       min-height: 374px;
-  //     }
-
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 260px;
