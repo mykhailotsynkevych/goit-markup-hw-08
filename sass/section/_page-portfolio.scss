@@ -5,6 +5,7 @@
 
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
+    min-width: 480px;
   }
 }
 
@@ -13,6 +14,7 @@
   justify-content: center;
 
   @media screen and (max-width: 767px) {
+    min-width: 450px;
     margin-bottom: -15px;
     flex-wrap: wrap;
     justify-content: start;
@@ -109,9 +111,10 @@
 }
 
 .project__piture {
-  @media screen and (max-width: 767px) {
-    width: 450px;
-  }
+  // display: block;
+  // @media screen and (max-width: 767px) {
+  //   width: 450px;
+  // }
 }
 
 .project__link {

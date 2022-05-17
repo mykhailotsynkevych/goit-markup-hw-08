@@ -24,13 +24,15 @@ img {
   display: block;
 }
 
-.section {
-  padding-bottom: 94px;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
   }
 }
 
@@ -99,6 +101,7 @@ link {
 }
 
 .page-header--underline {
+  min-width: 480px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -497,6 +500,7 @@ link {
 @media screen and (max-width: 1199px) {
   .features {
     padding-top: 60px;
+    min-width: 480px;
   }
 }
 
@@ -510,7 +514,7 @@ link {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     flex-wrap: wrap;
     margin: -15px;
@@ -520,7 +524,7 @@ link {
 @media screen and (max-width: 767px) {
   .features__item {
     width: 450px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 }
 
@@ -595,7 +599,7 @@ link {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item + .features__item {
     margin-left: 15px;
   }
@@ -745,29 +749,10 @@ link {
   }
 }
 
-.worker__foto {
-  min-width: 450px;
-  min-height: 460px;
-}
-
-@media screen and (min-width: 480px) {
-  .worker__foto {
-    min-width: 450px;
-    min-height: 460px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .worker__foto {
-    min-width: 354px;
-    min-height: 374px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .worker__foto {
-    min-width: 270px;
-    min-height: 260px;
+    width: 270px;
+    height: 260px;
   }
 }
 
@@ -1399,6 +1384,7 @@ link {
 @media screen and (max-width: 1199px) {
   .potrtfolio {
     padding-top: 60px;
+    min-width: 480px;
   }
 }
 
@@ -1409,6 +1395,7 @@ link {
 
 @media screen and (max-width: 767px) {
   .filtr__list {
+    min-width: 450px;
     margin-bottom: -15px;
     flex-wrap: wrap;
     justify-content: start;
@@ -1508,12 +1495,6 @@ link {
     margin: 15px;
     width: 370px;
     box-sizing: border-box;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .project__piture {
-    width: 450px;
   }
 }
 
