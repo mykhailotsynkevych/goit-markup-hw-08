@@ -890,7 +890,7 @@ link {
   display: flex;
 }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 479px) {
   .regular-clients__list {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -899,7 +899,7 @@ link {
   }
 }
 
-@media screen and (min-width: 468px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .regular-clients__list {
     flex-wrap: wrap;
     margin: -15px;
@@ -1262,17 +1262,29 @@ link {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
-  width: 528px;
-  height: 581px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .backdrop .modal {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .backdrop .modal {
     width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1317,7 +1329,13 @@ link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 40px 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+  }
 }
 
 .form__lable {
@@ -1343,7 +1361,6 @@ link {
 .form__input {
   display: flex;
   flex-direction: column;
-  width: 448px;
   height: 40px;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1363,7 +1380,13 @@ link {
 
 @media screen and (max-width: 1199px) {
   .form__input {
-    width: 370px;
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
   }
 }
 

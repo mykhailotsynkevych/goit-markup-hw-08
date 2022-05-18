@@ -474,7 +474,7 @@ screen and (min-resolution: 2dppx) {
 .regular-clients__list {
   display: flex;
 
-    @media screen and (max-width: 467px) {
+    @media screen and (max-width: 479px) {
         flex-direction: column;
         flex-wrap: nowrap;
         margin: -0px;
@@ -482,7 +482,7 @@ screen and (min-resolution: 2dppx) {
 
       }
 
-    @media screen and (min-width: 468px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       // min-width: 480px;
       // width: 100%;
       flex-wrap: wrap;
