@@ -62,10 +62,17 @@
 }
 
 .filtr__list + .projects__list {
-  margin-top: 50px;
 
   @media screen and (max-width: 767px) {
     margin-top: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 35px;
   }
 }
 
