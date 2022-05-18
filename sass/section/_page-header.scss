@@ -4,7 +4,8 @@
   position: relative;
 }
 .page-header--underline {
-  min-width: 480px;
+  // min-width: 480px;
+  width: 100%;
   border-bottom: 1px solid #ececec;
 }
 
@@ -102,6 +103,10 @@
     fill: var(--accent-color);
     cursor: pointer;
   }
+}
+
+.mob-menu__link {
+  color: var(--title-text-color);
 }
 
 .main-nav__link--current-page {
@@ -284,12 +289,13 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: var(--title-text-color);
-
     &+& {
         margin-top: 32px;
     }
 }
+
+
+
 
 
 .mob-menu__tel {
@@ -317,6 +323,7 @@
 
 .mob-menu__soc-list {
     display: flex;
+    flex-wrap: wrap;
 
     margin-top: 64px;
 }
