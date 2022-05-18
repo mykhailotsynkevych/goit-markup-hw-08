@@ -134,15 +134,30 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="our-work__examples-list list">
             <li class="our-work__example">
-              <img src="./images/box1.jpg" alt="печатает на клавиатуре" width="370" height="294" class="example__image" />
+              <img  class="example__image"
+              srcset="./images/box1.jpg 370w,
+              ./images/box1-x2.jpg 740w"             
+              sizes="(min-width: 1200px) 370px"
+              src="./images/box1.jpg"
+               alt="печатает на клавиатуре"/>
               <h3 class="example__title">Десктопные приложения</h3>
             </li>
             <li class="our-work__example">
-              <img src="./images/box2.jpg" alt="Телефон в руках" width="370" height="294" class="example__image"/>
+              <img class="example__image"
+              src="./images/box2.jpg"
+              srcset="./images/box2.jpg 370w,
+              ./images/box2-x2.jpg 740w"             
+              sizes="(min-width: 1200px) 370px"
+              alt="Телефон в руках" />
               <h3 class="example__title">Мобильные приложения</h3>
             </li>
             <li class="our-work__example">
-              <img src="./images/box3.jpg" alt="Палитра на планшете" width="370" height="294" class="example__image"/>
+              <img class="example__image"
+              src="./images/box3.jpg"
+              srcset="./images/box3.jpg 370w,
+              ./images/box3-x2.jpg 740w"             
+              sizes="(min-width: 1200px) 370px"
+              alt="Палитра на планшете" />
               <h3 class="example__title">Дизайнерские решения</h3>
             </li>
           </ul>
