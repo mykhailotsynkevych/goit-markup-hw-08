@@ -106,7 +106,6 @@ link {
 }
 
 .page-header__positioning {
-  display: flex;
   align-items: center;
 }
 
@@ -116,9 +115,9 @@ link {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .page-header .main-logo-link {
-    margin-right: 268px;
+@media screen and (min-width: 768px) {
+  .page-header__positioning {
+    display: flex;
   }
 }
 
@@ -1491,6 +1490,7 @@ link {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item {
+    display: flex;
     width: 354px;
     margin: 15px;
   }
@@ -1521,6 +1521,9 @@ link {
 }
 
 .project__card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

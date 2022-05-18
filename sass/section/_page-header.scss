@@ -9,7 +9,6 @@
 }
 
 .page-header__positioning {
-  display: flex;
   align-items: center;
 
   @media screen and (max-width: 767px) {
@@ -17,12 +16,13 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
 .page-header .main-logo-link {
   @media screen and (max-width: 767px) {
-    margin-right: 268px;
+    // margin-right: 268px;
   }
 
   @media screen and (min-width: 768px) {
@@ -229,6 +229,7 @@
 }
 
 .menu-button.is-open .button__burger {
+  
     position: fixed;
     top: 15px;
     right: 15px;
