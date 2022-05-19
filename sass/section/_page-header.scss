@@ -4,7 +4,6 @@
   position: relative;
 }
 .page-header--underline {
-  // min-width: 480px;
   width: 100%;
   border-bottom: 1px solid #ececec;
 }
@@ -23,7 +22,6 @@
 
 .page-header .main-logo-link {
   @media screen and (max-width: 767px) {
-    // margin-right: 268px;
   }
 
   @media screen and (min-width: 768px) {
@@ -112,21 +110,19 @@
 .main-nav__link--current-page {
   color: var(--accent-color);
 
-
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     &::after {
-    position: absolute;
-    bottom: 0;
-    display: block;
+      position: absolute;
+      bottom: 0;
+      display: block;
 
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
-        }
-
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
 }
 
 .page-header__contact {
@@ -191,10 +187,7 @@
   padding: 12px 8px;
   margin: 10px 0px;
 
-
-
   @media screen and (max-width: 767px) {
-    
   }
 
   @media screen and (min-width: 768px) {
@@ -209,14 +202,13 @@
 
   &:hover,
   &:focus {
-      fill: var(--accent-color);
-      cursor: pointer;
-    }
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-    
 }
 
 .menu-button {
@@ -230,15 +222,13 @@
 
 .menu-button.is-open .icon-cross {
   display: block;
-
 }
 
 .menu-button.is-open .button__burger {
-  
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 2;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
 }
 
 .menu-button.is-open .icon-menu {
@@ -246,35 +236,33 @@
 }
 
 .menu-container {
-    transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: fixed;
-        
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-      height: 100vh;
+  height: 100vh;
 
-      top: 0;
-      left: 0;
-      width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-      transform: translateY(-100%);
+  transform: translateY(-100%);
 
-      padding: 48px 40px;
+  padding: 48px 40px;
 
-      background-color: var(--primary-white-color);
+  background-color: var(--primary-white-color);
 
-      z-index: 1;
-    &.is-open {
+  z-index: 1;
+  &.is-open {
     transform: translateY(0);
-      
-    }
+  }
 
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu__main-nav {
@@ -282,68 +270,62 @@
   flex-direction: column;
 }
 
-
 .mob-menu__page {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-    &+& {
-        margin-top: 32px;
-    }
+  & + & {
+    margin-top: 32px;
+  }
 }
 
-
-
-
-
 .mob-menu__tel {
-    display: block;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .mob-menu__mail {
-    display: block;
+  display: block;
 
-    margin-top: 32px;
+  margin-top: 32px;
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 
-    color: var(--text-color); 
+  color: var(--text-color);
 }
 
 .mob-menu__soc-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
 .mob-menu__soc-item:not(:last-child) {
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu__soc-item:not(:first-child) {
-    padding-left: 10px;
-    
+  padding-left: 10px;
 }
 
 .mob-menu__soc-link {
-    font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-    
-        letter-spacing: 0.02em;
-    
-        color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
 }

@@ -60,7 +60,6 @@
 }
 
 .filtr__list + .projects__list {
-
   @media screen and (max-width: 767px) {
     margin-top: 40px;
   }
@@ -104,7 +103,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    
+
     width: 354px;
     margin: 15px;
   }
@@ -119,7 +118,6 @@
 .project__piture {
   display: block;
   max-width: 100%;
-
 }
 
 .project__link {
@@ -139,7 +137,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  
+
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
