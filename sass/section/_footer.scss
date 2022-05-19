@@ -235,13 +235,14 @@
     outline: none;
     }
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 399px) {
         min-width: 200px;
         margin-left: 10px;
 
     }
     
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 400px) and (max-width: 479px) {
+        min-width: 358px;
     }
 
     @media screen and (min-width: 480px) and (max-width: 1199px){

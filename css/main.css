@@ -958,7 +958,7 @@ link {
 
 @media screen and (max-width: 399px) {
   .regular-clients__item {
-    width: 210px;
+    width: 226px;
     margin: 5px;
   }
 }
@@ -1021,7 +1021,7 @@ link {
 
 @media screen and (max-width: 399px) {
   .regular-client__link {
-    width: 210px;
+    width: 226px;
   }
 }
 
@@ -1268,10 +1268,16 @@ link {
   outline: none;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399px) {
   .subscribe__email-input {
     min-width: 200px;
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 479px) {
+  .subscribe__email-input {
+    min-width: 358px;
   }
 }
 
